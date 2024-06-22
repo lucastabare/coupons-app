@@ -1,0 +1,121 @@
+{
+    "name": "xml",
+    "vendor": "tiendasdigitalesar",
+    "version": "0.2.0",
+    "title": "Bangho Backend",
+    "description": "Bangho Backend App for VTEX IO",
+    "mustUpdateAt": "2018-01-04",
+    "categories": [],
+    "dependencies": {
+        "vtex.messages": "1.x",
+        "gocommerce.sitemap-app": "1.x",
+        "vtex.catalog-api-proxy": "0.x",
+        "vtex.rewriter": "1.x",
+        "vtex.catalog-graphql": "1.x",
+        "vtex.styleguide": "9.x",
+        "vtex.routes-bootstrap": "0.x",
+        "vtex.graphql-server": "1.x"
+    },
+    "builders": {
+        "node": "6.x",
+        "react": "3.x",
+        "admin": "0.x",
+        "docs": "0.x",
+        "messages": "1.x"
+    },
+    "scripts": {
+        "postreleasy": "vtex publish --verbose --yes"
+    },
+    "credentialType": "absolute",
+    "policies": [
+        {
+            "name": "outbound-access",
+            "attrs": {
+                "host": "portal.vtexcommercestable.com.br",
+                "path": "/api/tenant/tenants"
+            }
+        },
+        {
+            "name": "outbound-access",
+            "attrs": {
+                "host": "{{account}}.vtexcommercestable.com.br",
+                "path": "/api/*"
+            }
+        },
+        {
+            "name": "outbound-access",
+            "attrs": {
+                "host": "api.vtexcommercestable.com.br",
+                "path": "/api/*"
+            }
+        },
+        {
+            "name": "outbound-access",
+            "attrs": {
+                "host": "api.vtex.com",
+                "path": "/*"
+            }
+        },
+        {
+            "name": "outbound-access",
+            "attrs": {
+                "host": "janus-edge.vtex.com.br",
+                "path": "/robots.txt"
+            }
+        },
+        {
+            "name": "outbound-access",
+            "attrs": {
+                "host": "vtexid.vtex.com.br",
+                "path": "/api/vtexid/pub/authenticated/user"
+            }
+        },
+        {
+            "name": "outbound-access",
+            "attrs": {
+                "host": "maps.googleapis.com",
+                "path": "*"
+            }
+        },
+        {
+            "name": "colossus-fire-event"
+        },
+        {
+            "name": "colossus-write-logs"
+        },
+        {
+            "name": "read-workspace-apps"
+        },
+        {
+            "name": "read-write-user-routes"
+        },
+        {
+            "name": "vbase-read-write"
+        },
+        {
+            "name": "read-public-registry-assets"
+        },
+        {
+            "name": "read-private-registry-assets"
+        },
+        {
+            "name": "sphinx-is-admin"
+        },
+        {
+            "name": "LogisticsAdmin"
+        },
+        {
+            "name": "POWER_USER_DS"
+        },
+        {
+            "name": "OMSViewer"
+        },
+        {
+            "name": "modify_prices"
+        },
+        {
+            "name": "read_prices"
+        }
+    ],
+    "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}
