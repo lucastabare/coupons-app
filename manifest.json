@@ -1,10 +1,10 @@
 {
-    "name": "xml",
-    "vendor": "tiendasdigitalesar",
-    "version": "0.2.0",
-    "title": "Bangho Backend",
-    "description": "Bangho Backend App for VTEX IO",
-    "mustUpdateAt": "2018-01-04",
+    "name": "coupons-app",
+    "vendor": "",
+    "version": "0.0.1",
+    "title": "Coupons App",
+    "description": "Coupons App for VTEX IO",
+    "mustUpdateAt": "2024-06-22",
     "categories": [],
     "dependencies": {
         "vtex.messages": "1.x",
@@ -68,13 +68,6 @@
             "attrs": {
                 "host": "vtexid.vtex.com.br",
                 "path": "/api/vtexid/pub/authenticated/user"
-            }
-        },
-        {
-            "name": "outbound-access",
-            "attrs": {
-                "host": "maps.googleapis.com",
-                "path": "*"
             }
         },
         {
