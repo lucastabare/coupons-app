@@ -1,0 +1,7 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# DO NOT MODIFY THIS FILE WITHOUT THE SUPERVISION OF YOUR TECHLEAD.
+# Make changes over this file without a compelling reason may incur a security and protocol violation.
+### COREBIZ PRECOMMIT ###
+corebiz vtex test precommit

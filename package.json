@@ -43,9 +43,5 @@
   },
   "dependencies": {
     "@types/xml2js": "^0.4.9"
-  },
-  "resolutions": {
-    "@testing-library/dom": "^9.0.0"
-  },
-  "packageManager": "yarn@4.3.1"
+  }
 }

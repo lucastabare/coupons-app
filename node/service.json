@@ -1,18 +1,18 @@
 {
-    "memory": 512,
-    "ttl": 60,
-    "timeout": 55,
-    "minReplicas": 2,
-    "maxReplicas": 10,
-    "workers": 4,
-    "routes": {
-        "xml": {
-            "path": "/_v/xml/:source",
-            "public": true
-        },
-        "discounts": {
-            "path": "/_v/discounts",
-            "public": true
-        }
+  "memory": 512,
+  "ttl": 60,
+  "timeout": 55,
+  "minReplicas": 2,
+  "maxReplicas": 10,
+  "workers": 4,
+  "routes": {
+    "xml": {
+      "path": "/_v/xml/:source",
+      "public": true
+    },
+    "discounts": {
+      "path": "/_v/discounts",
+      "public": true
     }
+  }
 }
