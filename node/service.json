@@ -6,12 +6,8 @@
   "maxReplicas": 10,
   "workers": 4,
   "routes": {
-    "xml": {
-      "path": "/_v/xml/:source",
-      "public": true
-    },
-    "discounts": {
-      "path": "/_v/discounts",
+    "coupons": {
+      "path": "/_v/coupons-app",
       "public": true
     }
   }

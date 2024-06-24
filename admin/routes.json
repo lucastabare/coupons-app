@@ -1,6 +1,6 @@
 {
   "admin.app.example": {
     "component": "CouponsApp",
-    "path": "/admin/app/couponsapp"
+    "path": "/admin/app/custom-coupons-app"
   }
 }

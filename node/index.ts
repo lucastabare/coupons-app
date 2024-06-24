@@ -2,8 +2,7 @@ import type { ClientsConfig, ServiceContext, RecorderState } from '@vtex/api'
 import { LRUCache, method, Service } from '@vtex/api'
 
 import { Clients } from './clients'
-import { xml } from './middlewares/xml'
-import { setDiscounts, getDiscounts } from './middlewares/discounts'
+import { setCoupons } from './middlewares/coupons'
 const TIMEOUT_MS = 800
 
 // Create a LRU memory cache for the Status client.
@@ -43,12 +42,8 @@ declare global {
 export default new Service({
   clients,
   routes: {
-    xml: method({
-      GET: [xml],
-    }),
-    discounts: method({
-      POST: [setDiscounts],
-      GET: [getDiscounts],
+    coupons: method({
+      POST: [setCoupons],
     }),
   },
 })

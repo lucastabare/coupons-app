@@ -1,9 +1,9 @@
 import { IOClients } from '@vtex/api'
 
-import Xml from './xml'
+import Coupons from './coupons'
 // Extend the default IOClients implementation with our own custom clients.
 export class Clients extends IOClients {
-  public get xml() {
-    return this.getOrSet('xml', Xml)
+  public get coupons() {
+    return this.getOrSet('coupons', Coupons)
   }
 }
