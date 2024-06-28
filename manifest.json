@@ -1,7 +1,7 @@
 {
   "name": "coupons-app",
   "vendor": "pinataar",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "title": "Coupons App",
   "description": "Coupons App for VTEX IO",
   "mustUpdateAt": "2024-06-22",
