@@ -3,12 +3,15 @@ import { ExternalClient } from '@vtex/api'
 
 export default class Vtex extends ExternalClient {
   constructor(context: IOContext, options?: InstanceOptions) {
-    super(`http://api.vtexcommercestable.com.br`, context, {
+    console.log("soy el contexto ==> ", context)
+    super(`http://pinataar.vtexcommercestable.com.br`, context, {
       ...(options ?? {}),
       headers: {
-        ...(options?.headers ?? {}),
         'Content-Type': 'application/json',
-        VtexIdclientAutCookie: context.authToken,
+        'Accept': 'application/json',
+        //VtexIdclientAutCookie: context.authToken,
+        'X-VTEX-API-AppKey': 'vtexappkey-pinataar-BRWUMU',
+        'X-VTEX-API-AppToken': 'ZFPTERAXFWXJCXCABGFBOWTDXJEXSJSAZGSFGFYRBNWVSEMWWBQDUNYDCBQSDOVMNZSVKNOUFRJJDRBVYADSIGMLDDOMDDDPMTAJSHDDZVMJJPKYWXPPIABGXGQNTAXV',
         'X-Vtex-Use-Https': 'true',
       },
     })
