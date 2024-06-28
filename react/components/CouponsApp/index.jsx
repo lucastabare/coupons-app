@@ -51,8 +51,6 @@ const CouponsApp = () => {
         },
       })
 
-      console.log("SOY EL RESPONSE ==> ", response)
-
       if (response.ok) {
         //alert('Cupones creados correctamente')
         showToast({
